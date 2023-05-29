@@ -1,0 +1,29 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    ul {
+        display: flex;
+        align-items: center;
+        li {
+            margin-right: 50px;
+            position: relative;
+        }
+        li:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 20px;
+            background-color: #9f9f9f;
+            right: -25px;
+        }
+        li a {
+            font-size: 32px;
+            text-transform: capitalize;
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
